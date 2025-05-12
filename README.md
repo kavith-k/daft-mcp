@@ -40,3 +40,7 @@ This is the easy bit. You can ask your LLM to list rental properties around an a
 * [Daft.ie](https://daft.ie) - for providing a platform that's so central to the Irish property market and for not locking away the API.
 * [daftlistings](https://github.com/AnthonyBloomer/daftlistings/) - for building such an easy-to-use library to work with the Daft API.
 * [Give(a)Go](https://giveago.co) - the initial version of this MCP server was built at one of their builder events hosted at [Baseline](https://www.baseline.community/) and sponsored by [Naptha AI](https://naptha.ai/). Would recommend checking them out if you're in Dublin!
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details. The MIT License allows for use, modification, and distribution with attribution, whilst providing no warranty.
