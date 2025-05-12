@@ -154,11 +154,8 @@ def find_rental_properties(
                 price_str = "Price not listed"
                 if listing.price:
                     price_str = listing.price
-                    # Basic cleaning if price comes with "From", "per month" etc.
-                    # This might need more robust parsing based on actual `daftlistings` output
                     if isinstance(price_str, str):
-                        price_str = price_str.replace("\u20ac", "€").split(" ")[0]
-
+                        price_str = price_str.replace("\u20ac", "€") 
 
                 listing_details = {
                     "title": listing.title if listing.title else "N/A",

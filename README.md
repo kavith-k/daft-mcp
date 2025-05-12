@@ -35,6 +35,14 @@ This is the easy bit. You can ask your LLM to list rental properties around an a
 ![Screenshot showing the MCP server working](./screenshots/screenshot-1.png)
 ![Another screenshot showing the MCP server working](./screenshots/screenshot-2.png)
 
+## Limitations
+
+- It's currently scoped to residential rental properties only. This can be extended easily to other types of listings, so might be updated soon.
+
+- The final output is non-deterministic; this isn't an issue with this project per se but rather an issue with LLMs and their unpredictability. The result from the MCP server is formatted the same way consistently, but I've noticed sometimes that the model will not show the link or ignore the price in the final output.
+
+- No tests :(
+
 ## Credit
 
 * [Daft.ie](https://daft.ie) - for providing a platform that's so central to the Irish property market and for not locking away the API.
