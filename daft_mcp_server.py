@@ -20,7 +20,8 @@ def get_llm_response(prompt: str) -> Optional[str]:
             url="https://openrouter.ai/api/v1/chat/completions",
             headers={
                 "Authorization": f"Bearer {api_key}",
-                "X-Title": "DaftMCPServer",
+                "X-Title": "daft-mcp",
+                "HTTP-Referer": "https://github.com/kavith-k/daft-mcp"
             },
             data=json.dumps({
                 "model": "google/gemini-2.0-flash-001",
@@ -120,7 +121,7 @@ def find_rental_properties(
 ) -> List[Dict[str, str]]:
     """
     Finds rental properties on Daft.ie.
-    Searches for properties to rent based on location, max price, number of bedrooms,
+    Searches for properties to rent based on location, max price, min number of bedrooms,
     search radius (in km, accepted values: 0, 1, 3, 5, 10, 20),
     and property type.
     """
