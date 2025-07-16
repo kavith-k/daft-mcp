@@ -124,6 +124,11 @@ def find_rental_properties(
     Searches for properties to rent based on location, max price, min number of bedrooms,
     search radius (in km, accepted values: 0, 1, 3, 5, 10, 20),
     and property type.
+    
+    Returns a list of dictionaries, each containing:
+    - title: Property listing title
+    - price: Rental price per month
+    - link: URL to the full listing on daft.ie
     """
     try:
         daft = Daft()
